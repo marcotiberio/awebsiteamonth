@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Website/Month -> Ronaldo</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="#">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+		overflow: hidden;
+	}
+
+	#myVideo{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+
+  #myVideo1{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+
+  #myVideo2{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+
+
+
+	/* Layer with position absolute in order to have it over the video
+	* --------------------------------------- */
+	.section .layer{
+		position: absolute;
+		z-index: 4;
+		width: 100%;
+		left: 0;
+		top: 43%;
+
+		/*
+		* Preventing flicker on some browsers
+		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+		*/
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+
+	/*solves problem with overflowing video in Mac with Chrome */
+	#section0{
+		overflow: hidden;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+
+	/* Hiding video controls
+	* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+	* --------------------------------------- */
+	video::-webkit-media-controls {
+	  display:none !important;
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+  <div class="title"><a href="#" target="_blank">website/month</a></div>
+  <button type="button" class="btn btn-primary shadow-none" id="about" data-toggle="modal" data-target="#aboutModal">
+  about
+  </button>
+
+
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!-- Modal -->
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutModalLabel"></h5>
+      </div>
+      <div class="modal-body">Lorem ipsum</div>
+    </div>
+  </div>
+</div> <!-- Modal -->
+
+
+
+<div id="fullpage">
+
+	<div class="section" id="main001">
+    <img src="assets/001.png" id="mainImage001" onclick="function001()">
+  </div>
+
+  <div class="section" id="main002">
+    <img src="assets/002.png" id="mainImage002" onclick="function002()">
+  </div>
+
+  <div class="section" id="main003">
+    <img src="assets/003.png" id="mainImage003" onclick="function003()">
+  </div>
+
+  <div class="section" id="main004">
+    <img src="assets/004.png" id="mainImage004" onclick="function004()">
+  </div>
+
+  <div class="section" id="main005">
+    <img src="assets/005.png" id="mainImage005" onclick="function005()">
+  </div>
+
+  <div class="section" id="main006">
+    <img src="assets/006.png" id="mainImage006" onclick="function006()">
+  </div>
+
+  <div class="section" id="main007">
+    <img src="assets/007.png" id="mainImage007" onclick="function007()">
+  </div>
+
+</div>
+
+
+<script type="text/javascript" src="../dist/fullpage.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+<script src="../dist/scripts.js"></script>
+
+<!--SCRIPTS LINKS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<!--SCRIPTS LINKS-->
+
+<script>
+
+  function function001() {
+    document.getElementById("mainImage001").style.width = "100%";
+    document.getElementById("mainImage001").style.top = "0";
+  }
+
+  function function002() {
+    document.getElementById("mainImage002").style.width = "100%";
+    document.getElementById("mainImage002").style.top = "0";
+  }
+
+  function function003() {
+    document.getElementById("mainImage003").style.width = "100%";
+    document.getElementById("mainImage003").style.top = "0";
+    document.getElementById("mainImage003").style.right = "0";
+  }
+
+  function function004() {
+    document.getElementById("mainImage004").style.width = "100%";
+    document.getElementById("mainImage004").style.top = "0";
+    document.getElementById("mainImage004").style.right = "0";
+  }
+
+  function function005() {
+    document.getElementById("mainImage005").style.width = "100%";
+    document.getElementById("mainImage005").style.top = "0";
+    document.getElementById("mainImage005").style.left = "0";
+  }
+
+  function function006() {
+    document.getElementById("mainImage006").style.width = "100%";
+    document.getElementById("mainImage006").style.top = "0";
+    document.getElementById("mainImage006").style.right = "0";
+  }
+
+  function function007() {
+    document.getElementById("mainImage007").style.width = "100%";
+    document.getElementById("mainImage007").style.top = "0";
+    document.getElementById("mainImage007").style.right = "0";
+  }
+
+</script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: true,
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE']
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+
+	/* background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #999; */
+}
+
+/* MAIN IMAGES */
+
+#main001 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#main002 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#main003 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#main004 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#main005 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#main006 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#main007 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#mainImage001 {
+  position: absolute;
+  width: 200%;
+  top: -600px;
+  transition: all 10s linear;
+}
+
+#mainImage002 {
+  position: absolute;
+  width: 250%;
+  top: -1000px;
+  transition: all 10s linear;
+}
+
+#mainImage003 {
+  position: absolute;
+  width: 200%;
+  top: -80%;
+	right: -18%;
+  transition: all 10s linear;
+}
+
+#mainImage004 {
+  position: absolute;
+  width: 200%;
+  top: -80%;
+	right: -0%;
+  transition: all 10s linear;
+}
+
+#mainImage005 {
+  position: absolute;
+  width: 200%;
+  top: -600px;
+	left: -13%;
+  transition: all 10s linear;
+}
+
+#mainImage006 {
+  position: absolute;
+  width: 280%;
+  top: -150%;
+	right: 0;
+  transition: all 10s linear;
+}
+
+#mainImage007 {
+  position: absolute;
+  width: 160%;
+  top: -100%;
+	right: 0;
+  transition: all 10s linear;
+}
+
+/*  */
+
+/* .navbar-brand {
+  text-shadow: 1px 1px yellow;
+}
+
+.hiddenMobile {
+	display: none;
+} */
+
+/* .vimeo-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+.vimeo-wrapper iframe {
+   width: 100vw;
+   height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+   /* min-height: 100vh; */
+   /* min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */ */
+   /* position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+} */
+
+
+/* .landing {
+  top: 90%;
+  text-align: center;
+  font-size: 200px;
+  text-shadow: 10px 10px black;
+  color: yellow;
+  animation: blinker 0.5s linear infinite;
+} */
+
+/* @keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+} */
+
+/* MOBILE MOBILE MOBILE */
+/* MOBILE MOBILE MOBILE */
+/* MOBILE MOBILE MOBILE */
+
+@media only screen and (max-width: 600px) {
+
+  .hiddenMobile {
+		display: block;
+  }
+
+}
