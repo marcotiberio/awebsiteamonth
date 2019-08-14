@@ -9,52 +9,64 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 
 /* unvisited link */
 a:link {
-  color: blue !important;
+  color: white !important;
 }
 
 /* visited link */
 a:visited {
-  color: blue !important;
+  color: white !important;
 }
 
 /* mouse over link */
 a:hover {
-  color: blue !important;
+  color: white !important;
   text-decoration: none !important;
 }
 
 /* selected link */
 a:active {
-  color: blue !important;
+  color: white !important;
 }
 
 .btn{
   border: 0px solid transparent !important; /* this was 1px earlier */
+  border-radius: 0 !important;
+  margin: 0;
+  padding: 0;
  }
 
 .title {
-  width: 90%;
-  background: unset;
+  width: 12%;
+  height: 5%;
   z-index: 999999;
   position: absolute;
-  left: 2%;
+  left: 1%;
   top: 1%;
+  text-align: center;
   font-size: 20px;
   font-weight: 600;
-  text-shadow: 2px 1px white;
-  color: blue;
+  /* text-shadow: 2px 1px white; */
+  color: white;
+  background-color: #5cd6d6;
 }
 
 #about {
-  background: unset;
+  width: 6%;
+  height: 5%;
   z-index: 999999;
   position: absolute;
-  right: 2%;
-  top: 0.5%;
+  right: 1%;
+  top: 1%;
   font-size: 20px;
   font-weight: 600;
-  text-shadow: 2px 1px white;
-  color: blue;
+  text-align: center;
+  /* text-shadow: 2px 1px white; */
+  color: white;
+  background-color: #5cd6d6;
+}
+
+#about:hover {
+  cursor: pointer;
 }
 
 .footer {
@@ -67,11 +79,11 @@ a:active {
   font-size: 20px;
   font-weight: 600;
   text-shadow: 2px 1px white;
-  color: blue;
+  color: #5cd6d6;
 }
 
 #aboutModal {
-  background-color: blue;
+  background-color: #5cd6d6;
 }
 
 .modal-dialog {
@@ -81,7 +93,7 @@ a:active {
 
 .modal-content {
   font-family: 'Roboto', sans-serif;
-  background-color: blue !important;
+  background-color: #5cd6d6 !important;
   color: white !important;
   width: 1000px;
   font-size: 20px;
@@ -105,14 +117,14 @@ a:active {
 .layer {
   font-size: 4vw;
   text-shadow: 10px 10px white;
-  color: blue;
+  color: #5cd6d6;
   /* animation: blinker 0.5s linear infinite; */
 }
 
 .layer1 {
   font-size: 4vw;
   text-shadow: 10px 10px white;
-  color: blue;
+  color: #5cd6d6;
   animation: blinker 0.5s linear infinite;
 }
 

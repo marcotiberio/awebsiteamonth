@@ -9,7 +9,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="#">
 
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
 
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -135,10 +135,19 @@
 
 <body>
 
+  <!-- <script>
+    function play(){
+         var audio = document.getElementById("audio");
+         audio.play();
+                   }
+     </script> -->
+
+  <audio id="audio" src="assets/avemariaz.mp3" ></audio>
+
   <div class="title"><a href="#" target="_blank">website/month</a></div>
-  <button type="button" class="btn btn-primary shadow-none" id="about" data-toggle="modal" data-target="#aboutModal">
+  <div id="about" data-toggle="modal" data-target="#aboutModal">
   about
-  </button>
+</div>
 
 
 <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!-- Modal -->
@@ -157,7 +166,13 @@
 <div id="fullpage">
 
 	<div class="section" id="main001">
-    <img src="assets/001.png" id="mainImage001" onclick="function001()">
+    <svg width="200" height="200" style="position: absolute; left: 56%; top: 11%; z-index: 1000;">
+      <circle cx="80" cy="80" r="80" stroke="" stroke-width="" fill="transparent" style="cursor: pointer;" onclick="function001()" />
+    </svg>
+    <svg width="200" height="200" style="position: absolute; left: 9%; top: 22%; z-index: 1000;">
+      <circle cx="80" cy="80" r="80" stroke="" stroke-width="" fill="transparent" style="cursor: pointer;" onclick="function001()" />
+    </svg>
+    <img src="assets/001.png" id="mainImage001">
   </div>
 
   <div class="section" id="main002">
@@ -181,15 +196,27 @@
   </div>
 
   <div class="section" id="main007">
-    <img src="assets/007.png" id="mainImage007" onclick="function007()">
+    <img src="assets/007_glow.png" id="mainImage007" onclick="function007()">
+  </div>
+
+  <div class="section" id="main008">
+    <img src="assets/008.png" id="mainImage008" onclick="function008()">
+  </div>
+
+  <div class="section" id="main008">
+    <img src="assets/009.png" id="mainImage009" onclick="function009()">
+  </div>
+
+  <div class="section" id="main010">
+    <img src="assets/010.png" id="mainImage010" onclick="function010()">
   </div>
 
 </div>
 
 
-<script type="text/javascript" src="dist/fullpage.js"></script>
+<script type="text/javascript" src="../dist/fullpage.js"></script>
 <script type="text/javascript" src="examples.js"></script>
-<script src="dist/scripts.js"></script>
+<script src="../dist/scripts.js"></script>
 
 <!--SCRIPTS LINKS-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -202,41 +229,79 @@
   function function001() {
     document.getElementById("mainImage001").style.width = "100%";
     document.getElementById("mainImage001").style.top = "0";
+    var audio = document.getElementById("audio");
+    audio.play();
   }
 
   function function002() {
     document.getElementById("mainImage002").style.width = "100%";
     document.getElementById("mainImage002").style.top = "0";
+    var audio = document.getElementById("audio");
+    audio.play();
   }
 
   function function003() {
     document.getElementById("mainImage003").style.width = "100%";
     document.getElementById("mainImage003").style.top = "0";
     document.getElementById("mainImage003").style.right = "0";
+    var audio = document.getElementById("audio");
+    audio.play();
   }
 
   function function004() {
     document.getElementById("mainImage004").style.width = "100%";
     document.getElementById("mainImage004").style.top = "0";
     document.getElementById("mainImage004").style.right = "0";
+    var audio = document.getElementById("audio");
+    audio.play();
   }
 
   function function005() {
     document.getElementById("mainImage005").style.width = "100%";
     document.getElementById("mainImage005").style.top = "0";
     document.getElementById("mainImage005").style.left = "0";
+    var audio = document.getElementById("audio");
+    audio.play();
   }
 
   function function006() {
     document.getElementById("mainImage006").style.width = "100%";
     document.getElementById("mainImage006").style.top = "0";
     document.getElementById("mainImage006").style.right = "0";
+    var audio = document.getElementById("audio");
+    audio.play();
   }
 
   function function007() {
     document.getElementById("mainImage007").style.width = "100%";
     document.getElementById("mainImage007").style.top = "0";
     document.getElementById("mainImage007").style.right = "0";
+    var audio = document.getElementById("audio");
+    audio.play();
+  }
+
+  function function008() {
+    document.getElementById("mainImage008").style.width = "100%";
+    document.getElementById("mainImage008").style.top = "0";
+    document.getElementById("mainImage008").style.right = "0";
+    var audio = document.getElementById("audio");
+    audio.play();
+  }
+
+  function function009() {
+    document.getElementById("mainImage009").style.width = "100%";
+    document.getElementById("mainImage009").style.top = "0";
+    document.getElementById("mainImage009").style.right = "0";
+    var audio = document.getElementById("audio");
+    audio.play();
+  }
+
+  function function010() {
+    document.getElementById("mainImage010").style.width = "100%";
+    document.getElementById("mainImage010").style.top = "0";
+    document.getElementById("mainImage010").style.left = "0";
+    var audio = document.getElementById("audio");
+    audio.play();
   }
 
 </script>

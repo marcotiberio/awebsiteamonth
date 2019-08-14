@@ -1,14 +1,12 @@
-body, html {
+html {
 	margin: 0;
 	padding: 0;
 	width: 100vw;
 	height: 100vh;
+}
 
-	/* background-position: center center;
-	background-repeat:  no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: #999; */
+body {
+	border: 20px solid #5cd6d6;
 }
 
 /* MAIN IMAGES */
@@ -44,6 +42,21 @@ body, html {
 }
 
 #main007 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#main008 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#main009 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#main010 {
   width: 100vw;
   height: 100vh;
 }
@@ -99,6 +112,30 @@ body, html {
   width: 160%;
   top: -100%;
 	right: 0;
+  transition: all 10s linear;
+}
+
+#mainImage008 {
+  position: absolute;
+  width: 190%;
+  top: -110%;
+	right: 0;
+  transition: all 10s linear;
+}
+
+#mainImage009 {
+  position: absolute;
+  width: 180%;
+  top: -130%;
+	right: 0;
+  transition: all 10s linear;
+}
+
+#mainImage010 {
+  position: absolute;
+  width: 260%;
+  top: -140%;
+	left: -20%;
   transition: all 10s linear;
 }
 
