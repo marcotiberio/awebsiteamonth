@@ -9,6 +9,19 @@ body {
 	border: 20px solid #5cd6d6;
 }
 
+.modal-dialog {
+  max-width: 70% !important;
+}
+
+.modal-content > .modal-body {
+	text-transform: uppercase !important;
+}
+
+.modal-body > p {
+	font-size: 2em;
+	text-align: left;
+}
+
 /* MAIN IMAGES */
 
 #main001 {
