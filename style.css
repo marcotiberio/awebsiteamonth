@@ -82,19 +82,19 @@ body {
   transition: all 10s linear;
 }
 
-#mainImage002 {
+/* #mainImage002 {
   position: absolute;
   width: 250%;
   top: -1000px;
   transition: all 10s linear;
-}
+} */
 
 #mainImage003 {
   position: absolute;
   width: 200%;
   top: -80%;
 	right: -18%;
-  transition: all 10s linear;
+  transition: all 8s linear;
 }
 
 #mainImage004 {
@@ -102,7 +102,7 @@ body {
   width: 200%;
   top: -80%;
 	right: -0%;
-  transition: all 10s linear;
+  transition: all 11s linear;
 }
 
 #mainImage005 {
@@ -110,7 +110,7 @@ body {
   width: 200%;
   top: -600px;
 	left: -13%;
-  transition: all 10s linear;
+  transition: all 9s linear;
 }
 
 #mainImage006 {
@@ -118,7 +118,7 @@ body {
   width: 280%;
   top: -150%;
 	right: 0;
-  transition: all 10s linear;
+  transition: all 15s linear;
 }
 
 #mainImage007 {
@@ -134,7 +134,7 @@ body {
   width: 190%;
   top: -110%;
 	right: 0;
-  transition: all 10s linear;
+  transition: all 9s linear;
 }
 
 #mainImage009 {
@@ -142,7 +142,7 @@ body {
   width: 180%;
   top: -130%;
 	right: 0;
-  transition: all 10s linear;
+  transition: all 9s linear;
 }
 
 #mainImage010 {
@@ -150,7 +150,7 @@ body {
   width: 260%;
   top: -140%;
 	left: -20%;
-  transition: all 10s linear;
+  transition: all 14s linear;
 }
 
 /*  */
