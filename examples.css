@@ -38,6 +38,27 @@ a:active {
 .title {
   width: 12%;
   height: 5%;
+  z-index: 999998;
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  /* text-shadow: 2px 1px white; */
+  color: white;
+  background-color: black;
+
+  cursor: pointer;
+
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em;
+}
+
+.title-hidden {
+  display: none;
+  width: 12%;
+  height: 5%;
   z-index: 999999;
   position: absolute;
   left: 1%;
@@ -53,7 +74,7 @@ a:active {
   letter-spacing: 0.1em;
 }
 
-.title:hover {
+.title-hidden:hover {
   text-decoration: underline;
   cursor: pointer;
 }
