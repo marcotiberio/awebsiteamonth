@@ -7,11 +7,41 @@ body {
     font-family: 'VT323', monospace !important;
 }
 
+h4 {
+    padding: 2%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 0 !important;
+    margin-bottom: 1% !important;
+
+    border: 1px solid white; 
+    outline: 1px solid white;
+}
+
 p {
     padding: 2%;
     margin-block-start: 0;
     margin-block-end: 0;
 
+    margin-top: 0 !important;
+    margin-bottom: 0.5% !important;
+
+    border: 1px solid white; 
+    outline: 1px solid white;
+}
+
+#link-yellow {
+    color: yellow !important;
+}
+
+#link-white {
+    color: white !important;
+}
+
+.border {
+    padding: 0.5%;
+    margin-block-start: 0;
+    margin-block-end: 0;
     border: 1px solid white; 
     outline: 1px solid white;
 }
@@ -49,7 +79,7 @@ p {
     position: absolute;
     padding: 1%;
     /* border: 5px solid white; */
-    box-shadow: 20px 20px 20px black;
+    box-shadow: 20px 20px 1px black;
 }
 
 #list {
@@ -65,9 +95,9 @@ p {
 
 #about {
     top: 5%;
-    right: 5%;
-    width: 30%;
-    height: 50%;
+    right: 2%;
+    width: 45%;
+    height: 90%;
     background-color: red;
 
     color: white;
@@ -75,7 +105,7 @@ p {
 
 #sites {
     top: 33%;
-    left: 20%;
+    left: 15%;
     width: 30%;
     height: 60%;
     background-color: red;
@@ -85,7 +115,7 @@ p {
 
 .footer-home {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
