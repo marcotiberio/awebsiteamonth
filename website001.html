@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Website/Month</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="#">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 2em;
+		font-family: 'Ubuntu Mono', monospace;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+		overflow: hidden;
+	}
+
+	#myVideo{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+
+  #myVideo1{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+
+  #myVideo2{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+
+
+
+	/* Layer with position absolute in order to have it over the video
+	* --------------------------------------- */
+	.section .layer{
+		position: absolute;
+		z-index: 4;
+		width: 100%;
+		left: 0;
+		top: 43%;
+
+		/*
+		* Preventing flicker on some browsers
+		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+		*/
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+
+	/*solves problem with overflowing video in Mac with Chrome */
+	#section0{
+		overflow: hidden;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+
+	/* Hiding video controls
+	* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+	* --------------------------------------- */
+	video::-webkit-media-controls {
+	  display:none !important;
+	}
+
+	</style>
+
+
+
+</head>
+
+<body>
+
+  <!-- <script>
+    function play(){
+         var audio = document.getElementById("audio");
+         audio.play();
+                   }
+     </script> -->
+
+  <audio id="audio1" src="assets/avemaria1.mp3" ></audio>
+  <audio id="audio2" src="assets/avemaria2.mp3" ></audio>
+  <audio id="audio3" src="assets/avemaria3.mp3" ></audio>
+  <audio id="audio4" src="assets/avemaria4.mp3" ></audio>
+  <audio id="audio5" src="assets/avemaria5.mp3" ></audio>
+  <audio id="audio6" src="assets/avemaria6.mp3" ></audio>
+  <audio id="audio7" src="assets/avemaria7.mp3" ></audio>
+  <audio id="audio8" src="assets/avemaria8.mp3" ></audio>
+  <audio id="audio9" src="assets/avemaria9.mp3" ></audio>
+
+  <div class="title"><a href="/index.html"><- Back Home</a></div>
+  <div id="about" data-toggle="modal" data-target="#aboutModal"></div>
+
+
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!-- Modal -->
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutModalLabel"></h5>
+      </div>
+      <div class="modal-body">
+      <p>Website/month is a web-based project focussing on alternative photographic narratives and realities.
+      The concept is to publish each month a different website showing how to create
+      alternative narratives using photography material and the browser.</p>
+      <!-- <br>
+      <h1><u>It's a Bird, It's a Plane, It's</u></h1>
+      <br>
+      <p>"It's a Bird, It's a Plane, It's" is the first website of this series
+      that funnily deal with terrorised gazes and football. Who are they looking at?</p> -->
+    </div>
+    </div>
+  </div>
+</div> <!-- Modal -->
+
+
+
+<div id="fullpage">
+
+	<div class="section" id="main001">
+    <img src="assets/001.png" id="mainImage001" onclick="function001()">
+  </div>
+
+  <!-- <div class="section" id="main002">
+    <img src="assets/002.png" id="mainImage002" onclick="function002()">
+  </div> -->
+
+  <div class="section" id="main003">
+    <img src="assets/003.png" id="mainImage003" onclick="function003()">
+  </div>
+
+  <div class="section" id="main004">
+    <img src="assets/004.png" id="mainImage004" onclick="function004()">
+  </div>
+
+  <div class="section" id="main005">
+    <img src="assets/005.png" id="mainImage005" onclick="function005()">
+  </div>
+
+  <div class="section" id="main006">
+    <img src="assets/006.png" id="mainImage006" onclick="function006()">
+  </div>
+
+  <div class="section" id="main007">
+    <img src="assets/007_glow.png" id="mainImage007" onclick="function007()">
+  </div>
+
+  <div class="section" id="main008">
+    <img src="assets/008.png" id="mainImage008" onclick="function008()">
+  </div>
+
+  <div class="section" id="main008">
+    <img src="assets/009.png" id="mainImage009" onclick="function009()">
+  </div>
+
+  <div class="section" id="main010">
+    <img src="assets/010.png" id="mainImage010" onclick="function010()">
+  </div>
+
+</div>
+
+
+<script type="text/javascript" src="dist/fullpage.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+<script src="dist/script.js"></script>
+
+<!--SCRIPTS LINKS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<!--SCRIPTS LINKS-->
+
+<script>
+
+  // $("#title").hover( function() { $("#title-hidden").toggle(); } );
+
+  function function001() {
+    document.getElementById("mainImage001").style.width = "100%";
+    document.getElementById("mainImage001").style.top = "0";
+    var audio = document.getElementById("audio1");
+    audio.play();
+  }
+
+  // function function002() {
+  //   document.getElementById("mainImage002").style.width = "100%";
+  //   document.getElementById("mainImage002").style.top = "0";
+  //   var audio = document.getElementById("audio");
+  //   audio.play();
+  // }
+
+  function function003() {
+    document.getElementById("mainImage003").style.width = "100%";
+    document.getElementById("mainImage003").style.top = "0";
+    document.getElementById("mainImage003").style.right = "0";
+    var audio = document.getElementById("audio2");
+    audio.play();
+  }
+
+  function function004() {
+    document.getElementById("mainImage004").style.width = "100%";
+    document.getElementById("mainImage004").style.top = "0";
+    document.getElementById("mainImage004").style.right = "0";
+    var audio = document.getElementById("audio3");
+    audio.play();
+  }
+
+  function function005() {
+    document.getElementById("mainImage005").style.width = "100%";
+    document.getElementById("mainImage005").style.top = "0";
+    document.getElementById("mainImage005").style.left = "0";
+    var audio = document.getElementById("audio4");
+    audio.play();
+  }
+
+  function function006() {
+    document.getElementById("mainImage006").style.width = "100%";
+    document.getElementById("mainImage006").style.top = "0";
+    document.getElementById("mainImage006").style.right = "0";
+    var audio = document.getElementById("audio5");
+    audio.play();
+  }
+
+  function function007() {
+    document.getElementById("mainImage007").style.width = "100%";
+    document.getElementById("mainImage007").style.top = "0";
+    document.getElementById("mainImage007").style.right = "0";
+    var audio = document.getElementById("audio6");
+    audio.play();
+  }
+
+  function function008() {
+    document.getElementById("mainImage008").style.width = "100%";
+    document.getElementById("mainImage008").style.top = "0";
+    document.getElementById("mainImage008").style.right = "0";
+    var audio = document.getElementById("audio7");
+    audio.play();
+  }
+
+  function function009() {
+    document.getElementById("mainImage009").style.width = "100%";
+    document.getElementById("mainImage009").style.top = "0";
+    document.getElementById("mainImage009").style.right = "0";
+    var audio = document.getElementById("audio8");
+    audio.play();
+  }
+
+  function function010() {
+    document.getElementById("mainImage010").style.width = "100%";
+    document.getElementById("mainImage010").style.top = "0";
+    document.getElementById("mainImage010").style.left = "0";
+    var audio = document.getElementById("audio9");
+    audio.play();
+  }
+
+</script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: true,
+        sectionsColor: ['#5cd6d6']
+    });
+</script>
+
+</body>
+</html>
