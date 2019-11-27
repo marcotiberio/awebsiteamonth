@@ -19,3 +19,10 @@ document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" + harold(
   }
 }
 setInterval(clock, 1000);
+
+
+// LOADER
+
+$(document).ready(function() {
+  $("#loader").fadeOut();
+});
