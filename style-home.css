@@ -7,10 +7,13 @@ body {
     font-family: 'VT323', monospace !important;
 }
 
-#loader {
+.body-mobile {
+    display: none;
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    color: yellow !important;
+    background-color: #1a1bce !important;
+    text-align: center;
 }
 
 h4 {
@@ -155,6 +158,21 @@ p {
     text-align: center;
     border-top: 5px solid white;
     font-size: 25px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .body-mobile {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        color: yellow !important;
+        background-color: #1a1bce !important;
+        text-align: center;
+    }
+
 }
     
     
